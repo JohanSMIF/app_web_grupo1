@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=""utf-8">
+        <title>Formularios html</title>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <form accept="#" method="post">
+            <div>
+                <label>Primer nombre:</label>
+                <input type="text" 
+                name="primerNombre" 
+                maxlength="10"
+                placeholder="Ingrese su primer nombre"
+                value="Juan"
+                required>
+            </div>
+            <br>
+            <div>
+                <label>Contraseña</label>
+                <input type="password" name="pwd"/>
+            </div>
+            <br>
+            <div>
+                <label>Edad</label>
+                <input type="number" name="edad" min="1" max="120"/>
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email"  placeholder="example@email.com"/>
+            </div>
+            <br>
+            <div>
+                <label>Archivo</label>
+                <input type="file" name="archivo" multiple/>
+                
+            </div>
+            <br>
+            <div>
+                <label>color</label>
+                <input type="color" name="color" >
+            </div>
+            <br>
+            <div>
+                <label>Fecha</label>
+                <input type="date" name="fecha" >
+            </div>
+            <br>
+            <div>
+                <label>fecha hora</label>
+                <input type="ditatime.local" name="fechaHora" >
+            </div>
+            <br>
+            <div>
+                <label>Ciudad</label>
+                <select name="Ciudad">
+                    <option value="">Seleccione una ciudad</option>
+                    <option>Tunja</option>
+                    <option>Duitama</option>
+                    <option>Sogamoso</option>
+                    <option >Arauca</option>
+            </div>
+            <br>
+            <label>Ciudad</label>
+                <select name="Ciudad">
+                    <option value="">Seleccione una ciudad</option>
+                    <option value>Tunja</option>
+                    <option value>Duitama</option>
+                    <option value>Sogamoso</option>
+                    <option value >Arauca</option>
+            </div>
+            <div>
+                <label>Estado civil</label>
+                <label>
+                    <input type="radio" name="EstadoCivil" value="a">
+                    Soltero/a
+                </label>
+                <label>
+                    <input type="radio" name="EstadoCivil2" value="b">
+                    casado/a
+                    <label>
+                        <input type="radio" name="EstadoCivil3" value="c" checked>
+                        ninguno
+                        <div>
+                            <label>
+                                <input type="checkbox" name="videojuegos">
+                                   videojuegos
+                            </label>
+                            <label>
+                                <input type="checkbox" name="deportes">
+                                deportes
+                            </label>
+                            <label>
+                                <input type="checkbox" name="cocina">
+                                cocina
+                            </label>
+                            <label>
+                                <input type="checkbox" name="lectura">
+                                lectura
+                            </label>
+                        </div>
+                        <div>
+                        <label>Justifique</label>
+                    <textarea name="justifique" rows="10" cols="35"> aaaaaaaaaaaaaaa</textarea> </textarea>    
+                    </div>
+            </div>
+            <div>
+                <input type="button" value="botón">
+                <button disabled> botón</button>
+            </div>
+            <div>
+                <input type="reset" value="limpiar">
+                <button type="reset"> Limpiar</button>
+            </div>
+            <div>
+                <input type="submit" value="enviar">
+                <button type="submit"> Limpiar</button>
+            </div>
+        </form>
+    </body>
+</html>
